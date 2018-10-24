@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SqlSugar\SqlSugar.csproj" />
+    <ProjectReference Include="..\UIDP.Entity\UIDP.Entity.csproj" />
+    <ProjectReference Include="..\UIDP.IService\UIDP.IService.csproj" />
+    <ProjectReference Include="..\UIDP.Model\UIDP.Model.csproj" />
+    <ProjectReference Include="..\UIDP.Utility\UIDP.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
