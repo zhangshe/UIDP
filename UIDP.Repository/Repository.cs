@@ -12,11 +12,9 @@ namespace UIDP.Repository
     public abstract class Repository<T> : IRepository<T> where T : class, new()
     {
         public SqlSugarClient db;
-        //public SimpleClient sdb;
         public Repository()
         {
             db = DbFactory.GetSqlSugarClient();
-            //sdb = db.GetSimpleClient();
         }
         #region 数据仓库实现
 

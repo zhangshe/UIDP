@@ -13,14 +13,14 @@ namespace UIDP.Service
 {
     public class DemoService : Repository<Demo>, IDemoService
     {
-        //private readonly IRepository<Demo> _repository;
-      
-        //public DemoService(IRepository<Demo> repository) : base(repository)
-        //{
-        //    _repository = repository;
-        //}
-        //public DemoService()
-        //{
-        //}
+        private readonly IRepository<Demo> _repository;
+
+        public DemoService(IRepository<Demo> repository)
+        {
+            _repository = repository;
+        }
+        public DemoService()
+        {
+        }
     }
 }

@@ -25,5 +25,17 @@ namespace UIDP.Bussiness
             };
             return t;
         }
+        public bool CreateEntity(string entityName, string contentRootPath)
+        {
+            string[] arr = contentRootPath.Split('\\');
+            string baseFileProvider = "";
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                baseFileProvider += arr[i];
+                baseFileProvider += "\\";
+            }
+            string filePath = baseFileProvider + "UIDP.Entity";
+            return demoService.CreateEntity(entityName, filePath);
+        }
     }
 }
